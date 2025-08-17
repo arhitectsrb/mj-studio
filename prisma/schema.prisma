@@ -1,5 +1,11 @@
-datasource db { provider = "postgresql"; url = env("MY_DB") }
-generator client { provider = "prisma-client-js" }
+datasource db {
+  provider = "postgresql"
+  url      = env("MY_DB")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
 
 model Reservation {
   id           String   @id @default(cuid())
@@ -12,6 +18,7 @@ model Reservation {
   status       Status   @default(PENDING)
   createdAt    DateTime @default(now())
 }
+
 model SpecialBlock {
   id        String   @id @default(cuid())
   blockDate DateTime
@@ -19,5 +26,6 @@ model SpecialBlock {
   endTime   String
   note      String?
 }
+
 enum Service { NOKTI SMINKA }
 enum Status { PENDING CONFIRMED REJECTED }
