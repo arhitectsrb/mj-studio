@@ -27,5 +27,13 @@ model SpecialBlock {
   note      String?
 }
 
-enum Service { NOKTI SMINKA }
-enum Status { PENDING CONFIRMED REJECTED }
+enum Service {
+  NOKTI
+  SMINKA
+}
+
+enum Status {
+  PENDING
+  CONFIRMED
+  REJECTED
+}
