@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma migrate deploy && next build",//*napravljena izmena
+    "build": "prisma generate && prisma migrate deploy && next build",
     "start": "next start",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy"
@@ -19,5 +19,6 @@
   "devDependencies": {
     "prisma": "5.16.2",
     "typescript": "5.5.4"
+    
   }
 }
