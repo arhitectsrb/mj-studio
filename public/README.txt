@@ -1,0 +1,1 @@
+Dodaj sliku hero.jpg u ovaj folder (pozadina korisničke stranice).
