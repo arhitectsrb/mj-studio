@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma migrate deploy && next build",
+    "build": "prisma generate && prisma migrate deploy && next build",//*napravljena izmena
     "start": "next start",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy"
